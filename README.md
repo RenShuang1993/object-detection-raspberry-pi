@@ -1,6 +1,6 @@
-# object-detection-raspberry-pi
+# Object-detection-raspberry-pi
 
-## ubuntu VNC
+## Ubuntu VNC
 ``` bash
 sudo apt-get update
 sudo apt-get upgrade
@@ -26,10 +26,11 @@ if use usb camera:
 import cv2
 video = cv2.VideoCapture(0)
 ```
-## use opencv Saving Video Frames
+## Use opencv Saving Video Frames
 ```python
 cap = cv2.VideoCapture("your video name")
 ```
-
+## Lable the ground truth
+see https://github.com/tzutalin/labelImg
 
 
