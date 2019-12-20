@@ -1,5 +1,20 @@
 # Object-detection-raspberry-pi
-
+## install tensorflow and Object detection on raspberry pi
+### install tensorflow 
+  TensorFlow：1.9
+  Python：3.5.3
+  Hardware: Raspberry 3B
+  install ibatlas-base-dev 
+  ```bash
+  sudo apt-get install libatlas-base-dev
+  Do you want to continue? [Y/n] input：Y
+  ```
+  install tensorflow
+  ```bash
+  sudo pip3 install  tensorflow
+  ```
+  install other Dependent tools :numpy，tensorboard，markdown .....
+  in my case is tensorflow 1.9 so numpy version is 1.13.0
 ## Ubuntu VNC
 ``` bash
 sudo apt-get update
@@ -32,5 +47,14 @@ cap = cv2.VideoCapture("your video name")
 ```
 ## Lable the ground truth
 see https://github.com/tzutalin/labelImg
+save as xml file
+
+## XML file to CSV 
+
+## CSV to TFCODE
+
+## Create a .pbtxt file
+Create a train.pbtxt file in object_detection / data
+
 
 
