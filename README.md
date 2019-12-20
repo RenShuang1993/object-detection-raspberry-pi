@@ -1,9 +1,9 @@
 # Object-detection-raspberry-pi
 ## install tensorflow and Object detection on raspberry pi
 ### install tensorflow 
-  TensorFlow：1.9
-  Python：3.5.3
-  Hardware: Raspberry 3B
+  TensorFlow：1.9<br>
+  Python：3.5.3<br>
+  Hardware: Raspberry 3B<br>
   install ibatlas-base-dev 
   ```bash
   sudo apt-get install libatlas-base-dev
