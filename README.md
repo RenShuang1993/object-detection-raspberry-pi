@@ -8,5 +8,5 @@ sudo apt-get install tightvncserver
 vncserver -geometry 800×800 :1
 ```
 open `Remote Desktop Viewer` and Connect with you IP
-![](https://www.flickr.com/photos/xmodulo/11921203856)
+![](https://sqlandplsql.files.wordpress.com/2012/07/vinagre_connect.jpeg)
 
