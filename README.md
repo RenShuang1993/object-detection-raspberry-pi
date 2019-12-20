@@ -14,7 +14,10 @@
   sudo pip3 install  tensorflow
   ```
   install other Dependent tools :numpy，tensorboard，markdown .....<br>
-  in my case is tensorflow 1.9 so numpy version is 1.13.0
+  in my case is tensorflow 1.9 so numpy version is 1.13.0,if numpy 1.16 or higher is not work
+### install Object detetion model
+see https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md
+
 ## Ubuntu VNC
 ``` bash
 sudo apt-get update
