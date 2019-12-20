@@ -13,7 +13,7 @@
   ```bash
   sudo pip3 install  tensorflow
   ```
-  install other Dependent tools :numpy，tensorboard，markdown .....
+  install other Dependent tools :numpy，tensorboard，markdown .....<br>
   in my case is tensorflow 1.9 so numpy version is 1.13.0
 ## Ubuntu VNC
 ``` bash
