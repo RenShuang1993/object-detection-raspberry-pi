@@ -29,7 +29,7 @@ sudo apt-get install tightvncserver
 vncserver -geometry 800×800 :1
 ```
 open `Remote Desktop Viewer` and Connect with you IP
-![](https://sqlandplsql.files.wordpress.com/2012/07/vinagre_connect.jpeg)
+![](https://github.com/RenShuang1993/object-detection-raspberry-pi/blob/master/image/Screenshot%20from%202019-12-20%2022-48-20.png)
 
 ## Collecting Datasets via Raspberry Pi Camera
 if use raspberrt pi camera:
