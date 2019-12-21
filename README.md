@@ -89,5 +89,18 @@ python3 model_main.py \
 --num_eval_steps=20 \
 --alsologtostderr
 ```
+## Monitoring training
+```bash
+tensorboard --logdir=object_detection/data/training
+```
+## Convert the checkpoint to frozen graph (.pb file)
+```bash
+cd research/object_detection
 
-
+python3 export_inference_graph.py \
+--input_type=image_tensor \
+--pipeline_config_path=data/ssd_mobilenet_v1_coco.config \
+--trained_checkpoint_prefix=data/training/model.ckpt-60000 \
+--output_directory=data/training
+```
+## Evaluation
