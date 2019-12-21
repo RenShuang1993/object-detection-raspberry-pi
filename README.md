@@ -71,12 +71,12 @@ item {
 Download model https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md <br>
 in my case ssd_mobilenet_v1_coco.config
 Items to modify in the `.config`:<br>
-  *model.ssd.num_classes<br>
-  *train_config.fine_tune_checkpoint<br>
-  *train_input_reader.label_map_path<br>
-  *train_input_reader.tf_record_input_reader<br>
-  *eval_input_reader.label_map_path<br>
-  *eval_input_reader.tf_record_input_reader<br>
+  * model.ssd.num_classes<br>
+  * train_config.fine_tune_checkpoint<br>
+  * train_input_reader.label_map_path<br>
+  * train_input_reader.tf_record_input_reader<br>
+  * eval_input_reader.label_map_path<br>
+  * eval_input_reader.tf_record_input_reader<br>
 ## start to Train 
 ```bash
 
