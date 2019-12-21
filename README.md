@@ -111,3 +111,5 @@ python3 export_inference_graph.py \
 --output_directory=data/training
 ```
 ## Evaluation
+see https://www.youtube.com/watch?v=rprKW1_TYhw&feature=youtu.be
+
