@@ -57,8 +57,10 @@ save as xml file
 ![](https://github.com/RenShuang1993/object-detection-raspberry-pi/blob/master/image/Screenshot%20from%202019-11-28%2012-22-42.png)
 
 ## XML file to CSV 
+see file `XML file to CSV`
 
 ## CSV to TFCODE
+see file  `CSV to TFCODE`
 
 ## Create a .pbtxt file/label map file
 Create a `train.pbtxt` file in object_detection/data
@@ -94,6 +96,10 @@ python3 model_main.py \
 ```bash
 tensorboard --logdir=object_detection/data/training
 ```
+![](https://github.com/RenShuang1993/object-detection-raspberry-pi/blob/master/image/Screenshot%20from%202019-11-24%2017-02-04.png)
+
+![](https://github.com/RenShuang1993/object-detection-raspberry-pi/blob/master/image/Screenshot%20from%202019-11-24%2016-43-08.png)
+
 ## Convert the checkpoint to frozen graph (.pb file)
 ```bash
 cd research/object_detection
