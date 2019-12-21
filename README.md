@@ -54,6 +54,7 @@ cap = cv2.VideoCapture("your video name")
 ## Lable the ground truth
 see https://github.com/tzutalin/labelImg
 save as xml file
+![](https://github.com/RenShuang1993/object-detection-raspberry-pi/blob/master/image/Screenshot%20from%202019-11-28%2012-22-42.png)
 
 ## XML file to CSV 
 
