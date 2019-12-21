@@ -1,5 +1,5 @@
 # Object-detection-raspberry-pi
-## install tensorflow and Object detection on raspberry pi
+## install tensorflow and Object detection on raspberry pi 
 ### install tensorflow 
   TensorFlow：1.9<br>
   Python：3.5.3<br>
@@ -17,6 +17,9 @@
   in my case is tensorflow 1.9 so numpy version is 1.13.0,if numpy 1.16 or higher is not work
 ### install Object detetion model
 see https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md
+
+### install opencv
+see https://www.learnopencv.com/install-opencv-4-on-raspberry-pi/
 
 ## Ubuntu VNC
 ``` bash
@@ -56,8 +59,35 @@ save as xml file
 
 ## CSV to TFCODE
 
-## Create a .pbtxt file
-Create a train.pbtxt file in object_detection / data
+## Create a .pbtxt file/label map file
+Create a `train.pbtxt` file in object_detection/data
+```python
+item {
+ id: 1
+ name: 'car'
+}
+```
+## Change `.config`file 
+Download model https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md <br>
+in my case ssd_mobilenet_v1_coco.config
+Items to modify in the `.config`:
+  *model.ssd.num_classes
+  *train_config.fine_tune_checkpoint
+  *train_input_reader.label_map_path
+  *train_input_reader.tf_record_input_reader
+  *eval_input_reader.label_map_path
+  *eval_input_reader.tf_record_input_reader
+## start to Train 
+```bash
 
+cd research/object_detection
+
+python3 model_main.py \
+--pipeline_config_path=data/ssd_mobilenet_v1_coco.config \
+--model_dir=data/training \
+--num_train_steps=60000 \
+--num_eval_steps=20 \
+--alsologtostderr
+```
 
 
